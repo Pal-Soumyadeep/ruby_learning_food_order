@@ -1,7 +1,8 @@
 class Restaurant
-  attr_accessor :name, :address, :menu
+  attr_accessor :id, :name, :address, :menu
   
-  def initialize(name, address, menu)
+  def initialize(id, name, address, menu)
+    @id = id
     @name = name
     @address = address
     @menu = menu

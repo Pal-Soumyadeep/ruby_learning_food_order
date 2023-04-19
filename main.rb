@@ -121,14 +121,16 @@ address3 = Address.new("371 Cross St", cities[2], states[2], "874921")
 address4 = Address.new("726 No St", cities[3], states[1], "263822")
 address5 = Address.new("748 Yes St", cities[4], states[2], "736782")
 
+addresses = [address1, address2, address3, address4 ,address5]
+
 #Create different resturant object
-restaurant1 = Restaurant.new(rest_name[0], address1, menu1)
-restaurant2 = Restaurant.new(rest_name[1], address2, menu2)
-restaurant3 = Restaurant.new(rest_name[2], address3, menu3)
-restaurant4 = Restaurant.new(rest_name[3], address4, menu4)
-restaurant5 = Restaurant.new(rest_name[4], address5, menu5)
-restaurant6 = Restaurant.new(rest_name[5], address2, menu6)
-restaurant7 = Restaurant.new(rest_name[6], address3, menu7+menu3)
+restaurant1 = Restaurant.new(1, rest_name[0], addresses[0], menu1)
+restaurant2 = Restaurant.new(2, rest_name[1], addresses[1], menu2)
+restaurant3 = Restaurant.new(3, rest_name[2], addresses[2], menu3)
+restaurant4 = Restaurant.new(4, rest_name[3], addresses[3], menu4)
+restaurant5 = Restaurant.new(5, rest_name[4], addresses[4], menu5)
+restaurant6 = Restaurant.new(6, rest_name[5], addresses[1], menu6)
+restaurant7 = Restaurant.new(7, rest_name[6], addresses[2], menu7+menu3)
 
 # Create user object
 print "Enter your name: "

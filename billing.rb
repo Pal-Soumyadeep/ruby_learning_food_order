@@ -8,7 +8,8 @@ class Billing
   end
   
   def generate_bill
-    puts "\nOrder Summary:"
+    puts
+    puts "Order Summary:"
     puts "---------------------------"
     order.display_order
     puts "---------------------------"
@@ -23,8 +24,10 @@ class Billing
     puts "Service Tax (#{(taxes.service_tax_rate * 100).round(2)}%): INR #{service_tax.round(2)}"
     puts "---------------------------"
     puts "Total: INR #{total.round(2)}"
+    puts "---------------------------"
+    transaction.do_transact
     puts "Transaction ID: #{transaction.transaction_id}"
-    puts "Payment Status: Pending" # You can update this based on actual payment status
+    puts "Payment Status: #{transaction.transaction_status}" # You can update this based on actual payment status
   end
   
   private
