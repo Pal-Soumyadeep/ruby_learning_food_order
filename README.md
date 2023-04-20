@@ -1,8 +1,5 @@
-Original.rb file is that was made which is not needed anymore. main.rb is the main file.
-
-To run
+To run the code use:
 ruby main.rb
 
-Known issues yet to be resolved
-owners is not implemented yet
-transaction is not implemented so payment status will show pending
+gitignore file added to ignore the original.rb file
+
