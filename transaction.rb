@@ -5,6 +5,8 @@ class Transaction
     @transaction_status = transaction_status
   end
   
+  protected
+  
   def do_transact
     puts "pay by\n1. Cash\n2. Card\n3. UPI"
     print "Pay by: "

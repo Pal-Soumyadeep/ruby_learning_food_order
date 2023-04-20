@@ -15,6 +15,7 @@ class Order
     puts "Order details:"
     puts "User: #{@user.name}"
     puts "Restaurant: #{@restaurant.name}"
+    puts "Owner: #{@restaurant.owner.name}"
     puts "Items: "
     total_cost = 0
     @items.each do |item|

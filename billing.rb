@@ -1,4 +1,6 @@
-class Billing
+require './transaction.rb'
+
+class Billing < Transaction
   attr_reader :order, :taxes, :transaction
   
   def initialize(order, taxes, transaction)
@@ -7,7 +9,7 @@ class Billing
     @transaction = transaction
   end
   
-  def generate_bill
+  def generate_bill 
     puts
     puts "Order Summary:"
     puts "---------------------------"
